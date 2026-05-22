@@ -9,8 +9,8 @@ pool:
 
 variables:
   modulePath: 'projet1-main'
-  acrLoginServer: 'acrmuseevirtuel.azurecr.io'
-  acrUsername: 'acrmuseevirtuel'
+  acrLoginServer: 'acrmuseevirtueld.azurecr.io'
+  acrUsername: 'acrmuseevirtueld'
   imageName: 'projet1'
   imageTag: '$(Build.BuildId)'
   namespace: 'springapp-prod'
@@ -40,7 +40,7 @@ steps:
       -Dsonar.projectKey=musee-virtuel \
       -Dsonar.projectName='Musee Virtuel' \
       -Dsonar.host.url=http://localhost:9000 \
-      -Dsonar.token=$(SONAR_TOKEN)
+
   displayName: 'CI - SonarQube Analysis'
   continueOnError: true
 

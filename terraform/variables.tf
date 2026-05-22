@@ -5,17 +5,17 @@ variable "resource_group_name" {
 
 variable "location" {
   description = "Région Azure"
-  default     = "West Europe"
+  default     = "francecentral"
 }
 
 variable "acr_name" {
   description = "Nom du Container Registry (doit être unique globalement)"
-  default     = "acrmuseevirtuel"
+  default     = "acrmuseevirtueld"
 }
 
 variable "key_vault_name" {
   description = "Nom du Key Vault (doit être unique globalement)"
-  default     = "kv-musee-virtuel"
+  default     = "kv-musee-virtuel2"
 }
 
 variable "db_password" {
