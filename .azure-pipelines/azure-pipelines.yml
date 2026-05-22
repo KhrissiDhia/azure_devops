@@ -40,6 +40,8 @@ steps:
       -Dsonar.projectKey=musee-virtuel \
       -Dsonar.projectName='Musee Virtuel' \
       -Dsonar.host.url=http://localhost:9000 \
+      -Dsonar.login=admin \
+      -Dsonar.password=28047908 \
 
   displayName: 'CI - SonarQube Analysis'
   continueOnError: true
